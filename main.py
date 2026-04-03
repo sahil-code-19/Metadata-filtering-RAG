@@ -3,9 +3,8 @@ from typing import List, Dict
 from dotenv import load_dotenv
 
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_neo4j import Neo4jGraph
-from langchain_community.vectorstores import Neo4jVector
-from langchain_community.vectorstores.neo4j_vector import remove_lucene_chars
+from langchain_neo4j import Neo4jGraph, Neo4jVector
+from langchain_neo4j.vectorstores.neo4j_vector import remove_lucene_chars
 
 load_dotenv()
 
